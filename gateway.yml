@@ -2,10 +2,9 @@ zuul:
   prefix: /api
   ignoredServices: '*'
   routes:
-    vets-service: /vet/**
-    visits-service: /visit/**
-    customers-service: /customer/**
-    api-gateway: /gateway/**
+    micro-service-one: /one/**
+    micro-service-two: /two/**
+    gateway: /gateway/**
 
 server:
   port: 8080
@@ -25,4 +24,4 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
+      defaultZone: http://registry:8761/eureka/
