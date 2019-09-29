@@ -1,4 +1,7 @@
-﻿spring:
+﻿
+server:
+  connection-timeout: 10000
+spring:
   profiles: default
 eureka:
   instance:

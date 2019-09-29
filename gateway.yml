@@ -8,6 +8,7 @@ zuul:
     gateway: /gateway/**
 
 server:
+  connection-timeout: 10000
   port: 8080
   compression:
     enabled: true
