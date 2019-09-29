@@ -4,6 +4,7 @@ zuul:
   routes:
     micro-service-one: /one/**
     micro-service-two: /two/**
+    micro-service-three: /three/**
     gateway: /gateway/**
 
 server:
